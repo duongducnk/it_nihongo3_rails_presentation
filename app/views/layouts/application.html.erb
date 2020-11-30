@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Presentation</title>
+  
+    <title>Login</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
 
- <body>
+    
+  </head>
+ 
+ <body class="text-center">
     <%#= link_to "ホーム", root_path %>
     <% if user_signed_in? %>
     <p>こんにちわ, <%= current_user.name %></p>
@@ -20,5 +22,8 @@
     <% end %>
 <hr>
     <%= yield %>
+   
+  
+  
   </body>
 </html>

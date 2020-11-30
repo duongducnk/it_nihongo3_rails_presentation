@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
+gem 'carrierwave', '~> 0.9'
+gem 'bootstrap-sass', '~> 2.3.2'
+
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3'
